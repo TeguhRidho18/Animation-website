@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>ANIMATION</title>
+    </head>
+    <body>
+        <h1>Hai Nurhalizah💖</h1>
+        <img src="TGH.jpg">
+        <h1>Mau ga jadi pacarku?😻</h1>
+        <button id='btn_mau' onclick='alert("I 🌹❤ U")'>MAU✅</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>TIDAK❎</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
